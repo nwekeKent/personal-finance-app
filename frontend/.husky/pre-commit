@@ -1,0 +1,6 @@
+# Run Prettier and ESLint on staged files
+npx lint-staged
+
+echo "Running linting and fix..."
+
+# additionally, you can add your test command here

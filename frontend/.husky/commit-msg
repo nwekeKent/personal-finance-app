@@ -1,0 +1,6 @@
+# Ensure commit message file exists, otherwise read from stdin
+if [ -f "$1" ]; then
+  yarn commitlint --edit "$1"
+else
+  cat | yarn commitlint --edit -
+fi
